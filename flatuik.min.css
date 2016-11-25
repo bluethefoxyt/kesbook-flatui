@@ -12,7 +12,6 @@ input {
     position: relative;
     background-color: #4CAF50;
     border: none;
-    font-size: 28px;
     color: #FFFFFF;
     padding: 20px;
     width: 200px;
@@ -129,6 +128,7 @@ input {
 .btn-success:hover {
     background-color: #4CAF50;
     color: white;
+ transition: all 0.8s
 }
 
 .btn-primary {
@@ -140,6 +140,7 @@ input {
 .btn-primary:hover {
     background-color: #008CBA;
     color: white;
+ transition: all 0.8s
 }
 
 .btn-danger {
@@ -151,6 +152,7 @@ input {
 .btn-danger:hover {
     background-color: #f44336;
     color: white;
+ transition: all 0.8s
 }
 
 .btn-default {
@@ -159,7 +161,7 @@ input {
     border: 2px solid #e7e7e7;
 }
 
-.btn-default:hover {background-color: #e7e7e7;}
+.btn-default:hover {background-color: #e7e7e7;  transition: all 0.8s}
 
 .btn-warning {
     background-color: white;
@@ -170,6 +172,7 @@ input {
 .btn-warning:hover {
     background-color:  #d4ac0d;
     color: white;
+ transition: all 0.8s
 }
 .disabled {
     opacity: 0.6;
@@ -192,8 +195,31 @@ ul.topnav {
     overflow: hidden;
     background-color: #333;
 }
+ul.topnav-inv {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EEEEEE;
+}
 
 ul.topnav li {float: left;}
+ul.topnav-inv li {float: left;}
+ul.topnav-inv li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul.topnav-inv li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 
 ul.topnav li a {
     display: block;
@@ -201,6 +227,14 @@ ul.topnav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+ul.topnav-inv {
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li.topnav.inv a {
+    color: black;
 }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
